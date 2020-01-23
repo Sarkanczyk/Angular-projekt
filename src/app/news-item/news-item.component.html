@@ -1,0 +1,26 @@
+<div [ngClass]="{ odd: index % 2 === 0, even: index % 2 !== 0 }" *ngIf="news">
+  <h1 class="title">{{ news.title }}</h1>
+  <div class="cont">
+    <span class="thumb" (click)="thumbUp()">
+      <img
+        src="https://www.vippng.com/png/full/7-77884_thumbs-up-thumbs-down-clip-art-at-clker.png"
+      />
+    </span>
+    <span class="thumb" (click)="thumbDown()">
+      <img
+        src="https://p7.hiclipart.com/preview/330/334/539/thumb-signal-emoticon-clip-art-thumbs-down-cliparts.jpg"
+      />
+    </span>
+    <p class="thumb">{{ news.thumbs }}</p>
+    <span class="thumb" (click)="remove()">
+      <img
+        src="https://pngimage.net/wp-content/uploads/2018/06/remove-png-1.png"
+      />
+    </span>
+  </div>
+  <div class="content">
+    <img src="{{ news.image }}" />
+    <br />
+    <p>{{ news.content }}</p>
+  </div>
+</div>

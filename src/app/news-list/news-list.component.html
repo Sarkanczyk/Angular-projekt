@@ -1,0 +1,7 @@
+<div>
+  <ul class="list">
+    <li *ngFor="let item of news | sortByPipe; let i = index">
+      <app-news-item [news]="item" [index]="i"> </app-news-item>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,29 @@
+.editor {
+  margin: auto;
+  width: 40vw;
+}
+
+.title {
+  width: 40vw;
+  height: 30px;
+}
+
+.area {
+  width: 40vw;
+  height: 60px;
+}
+
+.label {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.refresh {
+  width: 150px;
+  height: 50px;
+  margin-left: -75px;
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+}
